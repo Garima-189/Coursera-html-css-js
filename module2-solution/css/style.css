@@ -1,0 +1,70 @@
+
+.menu-title{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 25px;
+	text-align: center;
+
+}
+.for-border{
+	border: 2px solid black;
+}
+.box{
+	margin-top: 5%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	position: relative;
+
+
+	box-sizing:border-box;
+	background-color: gray;
+	border: 10px solid white;
+	color: white; //this is text color
+	border-color: black;
+	
+
+	
+
+}
+.title-box{
+	float: right;
+	
+	
+	border: 3px solid black;
+	padding-left: 10px;
+	padding-right:10px;
+	background-color: pink;
+
+
+}
+.content-box{
+	top: 20%;
+	padding: 2px;
+
+	margin-top: 10%;
+}
+@media(min-width: 992px){
+	.col-lg-4{
+		float:left;
+		
+		
+		width: 33%;
+	}
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-6,.col-md-12{
+		float:left;
+		
+	}
+	.col-md-6{
+		width: 50%;
+	}
+	.col-md-12{
+		width:100%;
+	}
+
+} 
+@media(max-width: 767px){
+	.col-sm-12{
+		width:100%;
+		float:left;
+	}
+}
