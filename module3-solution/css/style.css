@@ -1,0 +1,32 @@
+body{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	box-sizing: border-box;
+}
+#header-nav{
+	border-radius: 0;
+}
+h1{
+	margin-bottom: 100px;
+}
+.navbar-brand h1{
+	color: black;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0.75;
+	font-size: 1.5em;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.container-fluid{
+	background: gray;
+	margin-top:1%;
+	margin-bottom: 1%;
+	padding: 2%;
+	height:700px;
+}
+
+.menu-title{
+	text-align: center;
+	margin:10px auto 10px auto;
+}
