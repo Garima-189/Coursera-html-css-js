@@ -84,7 +84,7 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
   function(){
-  return buildAndShowHomeHTML(dc.loadMenuCategories);
+  return buildAndShowHomeHTML($dc.loadMenuCategories());
   }, // ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
@@ -119,7 +119,7 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      var homeHtmlToInsertIntoMainPage = "<div>"+$dc.loadMenuItems(chosenCategoryShortName)+"</div>";
+      var homeHtmlToInsertIntoMainPage = $dc.loadMenuItems(chosenCategoryShortName);
       insertHtml("#main-content",homeHtmlToInsertIntoMainPage);
 
 
